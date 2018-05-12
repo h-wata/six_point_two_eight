@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node pkg="nodelet" type="nodelet" name="six_point_two_eight_nodelet_manager" args="manager" output="screen"/>
+  <node
+    pkg="nodelet"
+    type="nodelet"
+    name="make_world_models"
+    args="load six_point_two_eight/make_world_models six_point_two_eight_nodelet_manager"
+    output="screen"/>
+</launch>

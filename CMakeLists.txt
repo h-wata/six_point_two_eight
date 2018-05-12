@@ -8,6 +8,7 @@ project(six_point_two_eight)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+		geometry_msgs
 		nodelet
 		roscpp
 		)
@@ -118,8 +119,8 @@ add_compile_options(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-include
-${catkin_INCLUDE_DIRS}
+		include
+        ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library

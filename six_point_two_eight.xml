@@ -1,0 +1,7 @@
+<library path="lib/libsix_point_two_eight">
+  <class
+    name="six_point_two_eight/make_world_models"
+    type="six_point_two_eight::MakeWorldModels"
+	base_class_type="nodelet::Nodelet">
+  </class>
+</library>
